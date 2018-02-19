@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "watch": "jest --watchAll --coverage false",
+        "watch": "jest --watch --coverage false",
         "test": "jest --coverage false",
         "test:cov": "jest --config ./jest.config.js"
     },

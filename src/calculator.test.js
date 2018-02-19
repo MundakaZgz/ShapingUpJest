@@ -22,4 +22,15 @@ describe('Calulator tests', () => {
         }
         expect(subNonNumbers).toThrowError(Error);
     });
+
+    test('mul 2 * 1 equals 2', () => {
+        expect(calculator.mul(2, 1)).toBe(2);
+    });
+
+    test('mul 1 * a throws an error', () => {
+        function mulNonNumbers() {
+            return calculator.mul(1, 'a');
+        }
+        expect(mulNonNumbers).toThrowError(Error);
+    });
 });
