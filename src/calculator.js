@@ -1,22 +1,22 @@
 function sum(a, b) {
-    if (typeof a == 'number' && typeof b == 'number') {
-        return a + b;
-    }
-    throw new Error('Parameters should be numbers');
+    validateInput(a, b);
+    return a + b;
 }
 
 function sub(a, b) {
-    if (typeof a == 'number' && typeof b == 'number') {
-        return a - b;
-    }
-    throw new Error('Parameters should be numbers');
+    validateInput(a, b);
+    return a - b;
 }
 
 function mul(a, b) {
-    if (typeof a == 'number' && typeof b == 'number') {
-        return a * b;
+    validateInput(a, b);
+    return a * b;
+}
+
+function validateInput(a, b) {
+    if (typeof a != 'number' || typeof b != 'number') {
+        throw new Error('Parameters should be numbers');
     }
-    throw new Error('Parameters should be numbers');
 }
 
 module.exports = {
