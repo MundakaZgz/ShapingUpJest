@@ -1,16 +1,23 @@
 {
     "name": "jesttest",
     "version": "1.0.0",
-    "description": "",
+    "description": "The intention of this project is to shape up with Jest (https://facebook.github.io/jest/) as testing framework.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MundakaZgz/ShapingUpWithJest.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MundakaZgz/ShapingUpWithJest/issues"
+    },
     "main": "index.js",
     "scripts": {
         "watch": "jest --watch --coverage false",
         "test": "jest --coverage false",
         "test:cov": "jest --config ./jest.config.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": ["Test", "Jest"],
+    "author": "Jose A. Herrero",
+    "license": "MIT License",
     "devDependencies": {
         "jest": "^22.3.0"
     }
